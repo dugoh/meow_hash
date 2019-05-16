@@ -17,6 +17,7 @@ matrix:
     - cmd.exe /C '"C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" amd64 && build.bat'
     - build_msvc/meow_test.exe
     - build_msvc/meow_example.exe
+    - ( sleep 60 ; taskkill /f /im notepad.exe ) & 
     - notepad.exe
     - tasklist
 
