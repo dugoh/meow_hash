@@ -19,8 +19,8 @@ matrix:
     - build_msvc/meow_example.exe
     - taskkill /?
     - ( sleep 60 ; cmd.exe /C kill.bat ) & 
-    - notepad.exe
-    - tasklist
+    - NOTEPAD.EXE
+    - TASKLIST /V
 
 #  - name: "gcc on Windows"
 #    os: windows
