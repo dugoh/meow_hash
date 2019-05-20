@@ -18,7 +18,7 @@ matrix:
     - build_msvc/meow_test.exe
     - build_msvc/meow_example.exe
     - taskkill /?
-    - ( sleep 60 ; taskkill /F /IM "notepad.exe" ) & 
+    - ( sleep 60 ; cmd.exe /C kill.bat ) & 
     - notepad.exe
     - tasklist
 
